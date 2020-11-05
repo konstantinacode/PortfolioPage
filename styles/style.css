@@ -162,87 +162,28 @@ nav ul {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1% 1% 0% 1%;
-  margin-bottom: 8%;
+footer {
   text-align: center;
-  border-bottom: 2px solid #dfe2e6;
-  background-color: black;
-  color: white;
-  height: 40vh;
-}
-
-.footer h4 {
-  padding: 2em;
-}
-
-.footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 1em;
-}
-
-.footer ul li {
-  display: inline-block;
-}
-
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: 0.7;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-a.github {
-  background-image: url(../img/github.svg);
-}
-
-a.linkedin {
-  background-image: url(../img/linkedin.svg);
-}
-
-a.mail {
-  background-image: url(../img/mail.svg);
-}
-
-a.instagram {
-  background-image: url(../img/inst.svg);
-}
-
-a.facebook {
-  background-image: url(../img/facebook.svg);
-}
-
-a.social:hover {
-  opacity: 1;
-}
-
-.footer p {
-  font-size: 60%;
+  /*padding-top: 60px;
+    padding-bottom: 60px;*/
+  font-size: 80%;
   width: 100%;
+  height: 10vh;
+  color: silver;
   position: relative;
-  bottom: 0%;
-  padding: 2em;
+  bottom: 1%;
+  background-color: black;
 }
 
-.footer p a {
-  color: white;
-  text-decoration: none;
+footer p {
+  display: inline-block;
+  padding: 1% auto;
+  margin: auto;
+}
+
+footer a {
+  text-decoration: underline;
+  color: silver;
 }
 
 #welcome-section {
@@ -400,6 +341,10 @@ a.social:hover {
   padding-bottom: 5%;
 }
 
+#experience .layer #work div h4 {
+  font-size: 1.2em;
+}
+
 #experience .layer #work div ul {
   font-size: 1em;
   text-align: left;
@@ -418,6 +363,7 @@ a.social:hover {
 #experience .layer #education {
   background-color: rgba(122, 17, 38, 0.7);
   margin: 2%;
+  padding: 5%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,6 +388,10 @@ a.social:hover {
           align-items: center;
   width: 90%;
   padding: 1%;
+}
+
+#experience .layer #education div h4 {
+  font-size: 1.2em;
 }
 
 #experience .layer #education div ul {
@@ -471,5 +421,169 @@ h3 img {
 
 .first {
   border-bottom: 1px solid beige;
+}
+
+.first ul {
+  padding-bottom: 5%;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects .workContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 5%;
+}
+
+#projects .workContainer .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .workContainer .row1 .column1 {
+  width: 60%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .workContainer .row1 .column1 img {
+  height: 50vh;
+}
+
+#projects .workContainer .row1 .column2 {
+  width: 40%;
+  padding: 1%;
+}
+
+#projects .workContainer .row1 .column2 img {
+  width: 100%;
+  height: 50vh;
+}
+
+#projects .workContainer .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .workContainer .row2 .column1 {
+  width: 50%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .workContainer .row2 .column1 img {
+  height: 50vh;
+}
+
+#projects .workContainer .row2 .column2 {
+  width: 50%;
+  padding: 1%;
+}
+
+#projects .workContainer .row2 .column2 img {
+  width: 100%;
+  height: 50vh;
+}
+
+#projects .workContainer .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .workContainer .row3 .column1 {
+  width: 30%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .workContainer .row3 .column1 img {
+  width: 100%;
+  height: 50vh;
+}
+
+#projects .workContainer .row3 .column2 {
+  width: 30%;
+  padding: 1%;
+}
+
+#projects .workContainer .row3 .column2 img {
+  width: 100%;
+  height: 50vh;
+}
+
+#projects .workContainer .row3 .column3 {
+  width: 30%;
+  padding: 1%;
+}
+
+#projects .workContainer .row3 .column3 img {
+  width: 100%;
+  height: 50vh;
+}
+
+#projects .column1:hover img,
+#projects .column2:hover img,
+#projects .column3:hover img {
+  border: 2px solid gold;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,9 @@
                 padding: 1%;
                 padding-bottom: 5%;
 
+                h4 {
+                    font-size: 1.2em;
+                }
 
                 ul {
                     font-size: 1em;
@@ -61,6 +64,8 @@
         #education {
             background-color: rgba(122, 17, 38, 0.7);
             margin: 2%;
+            padding: 5%;
+
             width: 50%;
             display: flex;
             justify-content: center;
@@ -74,6 +79,9 @@
                 width: 90%;
                 padding: 1%;
 
+                h4 {
+                    font-size: 1.2em;
+                }
 
                 ul {
                     font-size: 1em;
@@ -103,4 +111,10 @@ h3 {
 
 .first {
     border-bottom: 1px solid beige;
+
+    ul {
+        padding-bottom: 5%;
+
+
+    }
 }

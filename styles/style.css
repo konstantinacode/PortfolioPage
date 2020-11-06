@@ -162,26 +162,39 @@ nav ul {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
-footer {
-  text-align: center;
-  /*padding-top: 60px;
-    padding-bottom: 60px;*/
-  font-size: 80%;
-  width: 100%;
-  height: 10vh;
-  color: silver;
-  position: relative;
-  bottom: 1%;
-  background-color: black;
+html {
+  height: 100%;
 }
 
-footer p {
+html #footerDiv {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html #footerDiv footer {
+  text-align: center;
+  /*padding-top: 60px;
+            padding-bottom: 60px;*/
+  font-size: 80%;
+  width: 100%;
+  color: silver;
+  background-color: black;
+  margin-top: auto;
+}
+
+html #footerDiv footer p {
   display: inline-block;
   padding: 1% auto;
   margin: auto;
 }
 
-footer a {
+html #footerDiv footer a {
   text-decoration: underline;
   color: silver;
 }

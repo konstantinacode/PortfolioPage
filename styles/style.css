@@ -444,76 +444,45 @@ h3 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*
+    background-image: url("../img/welcome.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
 }
 
 #projects .workContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  min-height: 70vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 90%;
   padding: 5%;
-}
-
-#projects .workContainer .row1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#projects .workContainer .row1 .column1 {
-  width: 60%;
-  padding: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#projects .workContainer .row1 .column1 img {
-  height: 50vh;
-}
-
-#projects .workContainer .row1 .column2 {
-  width: 40%;
-  padding: 1%;
-}
-
-#projects .workContainer .row1 .column2 img {
-  width: 100%;
-  height: 50vh;
-}
-
-#projects .workContainer .row2 {
+#projects .workContainer .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50%;
 }
 
-#projects .workContainer .row2 .column1 {
+#projects .workContainer .row .column {
   width: 50%;
   padding: 1%;
   display: -webkit-box;
@@ -527,75 +496,13 @@ h3 img {
           align-items: center;
 }
 
-#projects .workContainer .row2 .column1 img {
-  height: 50vh;
-}
-
-#projects .workContainer .row2 .column2 {
-  width: 50%;
-  padding: 1%;
-}
-
-#projects .workContainer .row2 .column2 img {
+#projects .workContainer .row .column img {
   width: 100%;
-  height: 50vh;
+  height: 50%;
+  border: 1em solid rgba(125, 35, 49, 0.8);
 }
 
-#projects .workContainer .row3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#projects .workContainer .row3 .column1 {
-  width: 30%;
-  padding: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#projects .workContainer .row3 .column1 img {
-  width: 100%;
-  height: 50vh;
-}
-
-#projects .workContainer .row3 .column2 {
-  width: 30%;
-  padding: 1%;
-}
-
-#projects .workContainer .row3 .column2 img {
-  width: 100%;
-  height: 50vh;
-}
-
-#projects .workContainer .row3 .column3 {
-  width: 30%;
-  padding: 1%;
-}
-
-#projects .workContainer .row3 .column3 img {
-  width: 100%;
-  height: 50vh;
-}
-
-#projects .column1:hover img,
-#projects .column2:hover img,
-#projects .column3:hover img {
+#projects .column:hover img {
   border: 2px solid gold;
   opacity: 0.7;
 }

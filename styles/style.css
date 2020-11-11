@@ -683,4 +683,42 @@ h3 img {
     height: 100vh;
   }
 }
+
+@media screen and (max-height: 400px) {
+  #experience {
+    display: inline-block;
+    width: 100vw;
+    height: 400vh;
+  }
+  #experience .layer {
+    display: block;
+    width: 100%;
+  }
+  #experience .layer #work,
+  #experience .layer #education {
+    display: block;
+    width: 100vw;
+    height: 200vh;
+    padding: auto 0%;
+    margin: auto 0%;
+    text-align: center;
+  }
+  #experience .layer #work div,
+  #experience .layer #education div {
+    width: 100%;
+    text-align: center;
+  }
+  #experience .layer #work div ul,
+  #experience .layer #education div ul {
+    text-align: center;
+    list-style: none;
+  }
+  #experience .layer #work h3,
+  #experience .layer #education h3 {
+    padding: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */

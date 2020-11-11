@@ -130,3 +130,48 @@
         }
     }
 }
+
+
+@media screen and (max-height: 400px) {
+    #experience {
+        display: inline-block;
+        width: 100vw;
+        height: 400vh;
+
+
+        .layer {
+            display: block;
+            width: 100%;
+            // background-color: rgba(220, 20, 60, 0.5);
+
+
+
+            #work,
+            #education {
+                display: block;
+                width: 100vw;
+                height: 200vh;
+                padding: auto 0%;
+                margin: auto 0%;
+                text-align: center;
+
+
+                div {
+                    width: 100%;
+                    text-align: center;
+
+
+                    ul {
+                        text-align: center;
+                        list-style: none;
+                    }
+                }
+
+                h3 {
+                    padding: 1em;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

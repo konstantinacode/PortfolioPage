@@ -75,42 +75,204 @@ nav ul {
   transition: all 0.3s ease;
 }
 
-/*
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 80%;
-    }
+  .nav-links {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #000000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-
-    .burger {
-        display: block;
-    }
+  body {
+    overflow-x: hidden;
+  }
+  body #welcome-section h1,
+  body #welcome-section p {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+  }
+  body #about {
+    height: auto;
+    display: block;
+  }
+  body #about .first-column,
+  body #about .second-column {
+    width: 100%;
+  }
+  body #about .first-column p,
+  body #about .second-column p {
+    width: 100%;
+  }
+  body #about .first-column a,
+  body #about .second-column a {
+    text-align: center;
+  }
+  body #experience {
+    background-color: #7a1126;
+    display: inline-block;
+    width: 100vw;
+    height: 216vh;
+  }
+  body #experience .layer {
+    display: block;
+    width: 100%;
+  }
+  body #experience .layer #work,
+  body #experience .layer #education {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 8vh auto 0% auto;
+    text-align: center;
+  }
+  body #experience .layer #work h3 img,
+  body #experience .layer #education h3 img {
+    display: inline-block;
+    height: 30px;
+  }
+  body #experience .layer #work div,
+  body #experience .layer #education div {
+    width: 100%;
+    text-align: center;
+  }
+  body #experience .layer #work div ul,
+  body #experience .layer #education div ul {
+    text-align: center;
+  }
+  body #experience .layer #work h3,
+  body #experience .layer #education h3 {
+    padding: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #projects {
+    margin: 10% auto 0% auto;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
 }
 
-*/
+@media screen and (max-height: 816px) {
+  #experience .layer {
+    height: 100vh;
+  }
+  #experience .layer #work,
+  #experience .layer #education {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  body #experience {
+    display: inline-block;
+    width: 100vw;
+    height: 400vh;
+  }
+  body #experience .layer {
+    display: block;
+    width: 100%;
+  }
+  body #experience .layer #work,
+  body #experience .layer #education {
+    display: block;
+    width: 100vw;
+    height: 200vh;
+    padding: auto 0%;
+    margin: auto 0%;
+    text-align: center;
+  }
+  body #experience .layer #work h3 img,
+  body #experience .layer #education h3 img {
+    display: inline-block;
+    height: 6em;
+  }
+  body #experience .layer #work div,
+  body #experience .layer #education div {
+    width: 100%;
+    text-align: center;
+  }
+  body #experience .layer #work div ul,
+  body #experience .layer #education div ul {
+    text-align: center;
+    list-style: none;
+  }
+  body #experience .layer #work h3,
+  body #experience .layer #education h3 {
+    padding: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  body #experience {
+    display: inline-block;
+    width: 100vw;
+    height: 400vh;
+  }
+  body #experience .layer {
+    display: block;
+    width: 100%;
+  }
+  body #experience .layer #work,
+  body #experience .layer #education {
+    display: block;
+    width: 100vw;
+    height: 200vh;
+    padding: auto 0%;
+    margin: auto 0%;
+    text-align: center;
+  }
+  body #experience .layer #work div,
+  body #experience .layer #education div {
+    width: 100%;
+    text-align: center;
+  }
+  body #experience .layer #work div ul,
+  body #experience .layer #education div ul {
+    text-align: center;
+    list-style: none;
+  }
+  body #experience .layer #work h3,
+  body #experience .layer #education h3 {
+    padding: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -502,13 +664,23 @@ h3 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*
-    background-image: url("../img/welcome.jpeg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10vh;
 }
 
 #projects .workContainer {
@@ -563,162 +735,5 @@ h3 img {
 #projects .column:hover img {
   border: 2px solid gold;
   opacity: 0.7;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #000000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-  #welcome-section h1,
-  #welcome-section p {
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
-  }
-  #about {
-    height: auto;
-    display: block;
-  }
-  #about .first-column,
-  #about .second-column {
-    width: 100%;
-  }
-  #about .first-column p,
-  #about .second-column p {
-    width: 100%;
-  }
-  #about .first-column a,
-  #about .second-column a {
-    text-align: center;
-  }
-  #experience {
-    background-color: #7a1126;
-    display: inline-block;
-    width: 100vw;
-    height: 200vh;
-  }
-  #experience .layer {
-    display: block;
-    width: 100%;
-  }
-  #experience .layer #work,
-  #experience .layer #education {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    padding: auto 0%;
-    margin: auto 0%;
-    text-align: center;
-  }
-  #experience .layer #work div,
-  #experience .layer #education div {
-    width: 100%;
-    text-align: center;
-  }
-  #experience .layer #work div ul,
-  #experience .layer #education div ul {
-    text-align: center;
-  }
-  #experience .layer #work h3,
-  #experience .layer #education h3 {
-    padding: 1em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media screen and (max-height: 816px) {
-  #experience .layer {
-    height: 100vh;
-  }
-  #experience .layer #work,
-  #experience .layer #education {
-    height: 90vh;
-  }
-}
-
-@media screen and (max-height: 740px) {
-  #experience .layer {
-    height: 100vh;
-  }
-  #experience .layer #work,
-  #experience .layer #education {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-height: 400px) {
-  #experience {
-    display: inline-block;
-    width: 100vw;
-    height: 400vh;
-  }
-  #experience .layer {
-    display: block;
-    width: 100%;
-  }
-  #experience .layer #work,
-  #experience .layer #education {
-    display: block;
-    width: 100vw;
-    height: 200vh;
-    padding: auto 0%;
-    margin: auto 0%;
-    text-align: center;
-  }
-  #experience .layer #work div,
-  #experience .layer #education div {
-    width: 100%;
-    text-align: center;
-  }
-  #experience .layer #work div ul,
-  #experience .layer #education div ul {
-    text-align: center;
-    list-style: none;
-  }
-  #experience .layer #work h3,
-  #experience .layer #education h3 {
-    padding: 1em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 /*# sourceMappingURL=style.css.map */

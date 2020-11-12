@@ -67,7 +67,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-/*
+
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 80%;
@@ -77,6 +77,88 @@ nav {
 @media screen and (max-width: 900px) {
     body {
         overflow-x: hidden;
+
+        #welcome-section {
+
+            h1,
+            p {
+                padding: 0%;
+                margin: 0%;
+                width: 100%;
+            }
+        }
+
+        #about {
+            height: auto;
+            display: block;
+
+            .first-column,
+            .second-column {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                }
+
+                a {
+                    text-align: center;
+                }
+            }
+        }
+
+        #experience {
+            background-color: rgb(122, 17, 38);
+            //background-image: none;
+            display: inline-block;
+            width: 100vw;
+            height: 200vh + 16vh;
+
+            .layer {
+                display: block;
+                width: 100%;
+
+                #work,
+                #education {
+                    display: block;
+                    width: 100vw;
+                    height: 100vh;
+                    padding: 0%;
+                    margin: 8vh auto 0% auto;
+                    text-align: center;
+
+                    h3 {
+
+
+                        img {
+                            display: inline-block;
+                            height: 30px;
+                            //padding: 3%;
+                        }
+
+
+                    }
+
+
+                    div {
+                        width: 100%;
+                        text-align: center;
+
+                        ul {
+                            text-align: center;
+                        }
+                    }
+
+                    h3 {
+                        padding: 1em;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        #projects {
+            margin: 10% auto 0% auto;
+        }
     }
 
     .nav-links {
@@ -100,9 +182,131 @@ nav {
     .burger {
         display: block;
     }
+
 }
 
-*/
+@media screen and (max-height: 816px) {
+
+    #experience {
+        .layer {
+
+            #work,
+            #education {
+                height: 90vh;
+            }
+
+            height: 100vh;
+        }
+    }
+}
+
+
+@media screen and (max-height: 740px) {
+    body {
+        #experience {
+            display: inline-block;
+            width: 100vw;
+            height: 400vh;
+
+            .layer {
+                display: block;
+                //height: 300vh;
+                width: 100%;
+
+
+                #work,
+                #education {
+                    display: block;
+                    width: 100vw;
+                    height: 200vh;
+                    padding: auto 0%;
+                    margin: auto 0%;
+                    text-align: center;
+
+                    h3 {
+
+
+                        img {
+                            display: inline-block;
+                            height: 6em;
+                            //padding: 3%;
+                        }
+
+
+                    }
+
+                    div {
+                        width: 100%;
+                        text-align: center;
+
+
+                        ul {
+                            text-align: center;
+                            list-style: none;
+                        }
+                    }
+
+                    h3 {
+                        padding: 1em;
+                        justify-content: center;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-height: 400px) {
+    body {
+        #experience {
+            display: inline-block;
+            width: 100vw;
+            height: 400vh;
+
+
+            .layer {
+                display: block;
+                width: 100%;
+
+                // background-color: rgba(220, 20, 60, 0.5);
+                //height: 400vh;
+                #work,
+                #education {
+                    display: block;
+                    width: 100vw;
+                    height: 200vh;
+                    padding: auto 0%;
+                    margin: auto 0%;
+                    text-align: center;
+
+
+                    div {
+                        width: 100%;
+                        text-align: center;
+
+
+                        ul {
+                            text-align: center;
+                            list-style: none;
+                        }
+                    }
+
+                    h3 {
+                        padding: 1em;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
 
 
 .nav-active {
